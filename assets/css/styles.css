@@ -162,45 +162,47 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; }
   .section { padding: 22px 20px; }
 }
 
-/* PROFILE - EFECTO SOBRESALIENTE */
+/* ABOUT SECTION - FOTO QUE SOBRESALE */
 .section-about {
-  overflow: visible;     /* permite que la foto salga del borde */
-  padding-top: 80px;    /* espacio para que la foto no tape el h2 */
-}
-
-.profile {
-  display: flex;
-  gap: 22px;
-  align-items: flex-end;
-  background: var(--bg-3);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px 18px 18px 18px;
   overflow: visible;
-  position: relative;
+  padding-top: 20px;
 }
 
-.profile-img-wrap {
-  flex-shrink: 0;
-  width: 44%;
-  position: relative;
-  margin-top: -130px;   /* la foto sube y sobresale por arriba */
-  filter: drop-shadow(0 -8px 24px rgba(0,0,0,0.5));
+.about-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  align-items: start;
 }
 
-.profile-img-wrap img {
+.about-photo-col {
+  position: relative;
+  margin-top: -100px;        /* sube la foto por encima del borde de la sección */
+  filter: drop-shadow(0 -6px 20px rgba(0,0,0,0.6));
+}
+
+.about-photo {
   width: 100%;
-  object-fit: contain;
   display: block;
-  border-radius: 12px 12px 8px 8px;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
-.profile .bio { flex: 1; padding-top: 8px; }
+.about-content {
+  padding-top: 4px;
+}
 
-@media (max-width: 680px) {
-  .profile { flex-direction: column; align-items: center; }
-  .profile-img-wrap { width: 65%; margin-top: -100px; }
-  .section-about { padding-top: 100px; }
+@media (max-width: 760px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  .about-photo-col {
+    margin-top: -80px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-about { padding-top: 10px; }
 }
 
 /* PILLS */
