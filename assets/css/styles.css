@@ -133,6 +133,8 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; }
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  z-index: 1;
 }
 .section h2::after {
   content: '';
@@ -165,7 +167,8 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; }
 /* ABOUT SECTION - FOTO QUE SOBRESALE */
 .section-about {
   overflow: visible;
-  padding-top: 20px;
+  padding-top: 16px;
+  padding-left: 32px;
 }
 
 .about-layout {
@@ -177,7 +180,7 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .about-photo-col {
   position: relative;
-  margin-top: -100px;        /* sube la foto por encima del borde de la sección */
+  margin-top: -110px;
   filter: drop-shadow(0 -6px 20px rgba(0,0,0,0.6));
 }
 
