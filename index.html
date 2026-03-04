@@ -16,7 +16,7 @@ title: "Jorge Mesa Marrero — CV & Repos"
     </nav>
   </header>
 
-  <section class="section section-about reveal">
+  <section class="section section-about hero-section reveal">
     <h2>About me</h2>
     <div class="about-layout">
 
@@ -39,10 +39,10 @@ Currently, I am focusing on key areas of software development.
         <h3 style="margin:0 0 8px">Experience/Class projects</h3>
         <ul class="muted" style="margin:0 0 16px;padding-left:18px">
           <li>In progress</li>
-          <li>Java Proyect: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
+          <li>Proyecto Java: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
         </ul>
 
-        <h3 style="margin:0 0 8px">Goal</h3>
+        <h3 style="margin:0 0 8px">Objetivo</h3>
         <p class="muted" style="margin:0">
           To keep growing as a developer, consolidating my knowledge in programming, databases, and application design.
 I enjoy documenting my learning process and sharing it with the community.
@@ -63,26 +63,17 @@ I enjoy documenting my learning process and sharing it with the community.
           <div class="timeline-entry">
             <div class="timeline-dot"></div>
             <div class="timeline-body">
-              <span class="timeline-period">2002 – 2006</span>
-              <h3 class="timeline-title">Secondary Education (E.S.O.)</h3>
-              <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
               <span class="timeline-period">2006 – 2008</span>
               <h3 class="timeline-title">High School (Bachillerato)</h3>
               <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
             </div>
           </div>
           <div class="timeline-entry">
-            <div class="timeline-dot accent"></div>
+            <div class="timeline-dot"></div>
             <div class="timeline-body">
-              <span class="timeline-period">2025 – Present</span>
-              <h3 class="timeline-title">Multiplatform Application Development (DAM)</h3>
-              <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
-              <span class="timeline-badge">In progress</span>
+              <span class="timeline-period">2002 – 2006</span>
+              <h3 class="timeline-title">Secondary Education (E.S.O.)</h3>
+              <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
             </div>
           </div>
         </div>
@@ -92,12 +83,12 @@ I enjoy documenting my learning process and sharing it with the community.
         <div class="timeline-label">Professional Training</div>
         <div class="timeline-items">
           <div class="timeline-entry">
-            <div class="timeline-dot"></div>
+            <div class="timeline-dot accent"></div>
             <div class="timeline-body">
-              <span class="timeline-period">2013 – 2016</span>
-              <h3 class="timeline-title">Tourism &amp; Hospitality — Theoretical</h3>
-              <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
-              <p class="timeline-desc">Dual training system — theoretical component.</p>
+              <span class="timeline-period">2025 – Present</span>
+              <h3 class="timeline-title">Multiplatform Application Development (DAM)</h3>
+              <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
+              <span class="timeline-badge">In progress</span>
             </div>
           </div>
           <div class="timeline-entry">
@@ -107,6 +98,15 @@ I enjoy documenting my learning process and sharing it with the community.
               <h3 class="timeline-title">Tourism &amp; Hospitality — Practical</h3>
               <p class="timeline-place">Hotel Upstalsboom Parkhotel ★★★★ · Emden, Germany</p>
               <p class="timeline-desc">Dual training — hands-on in a 4-star hotel environment.</p>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <span class="timeline-period">2013 – 2016</span>
+              <h3 class="timeline-title">Tourism &amp; Hospitality — Theoretical</h3>
+              <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
+              <p class="timeline-desc">Dual training system — theoretical component.</p>
             </div>
           </div>
         </div>
@@ -255,18 +255,28 @@ I enjoy documenting my learning process and sharing it with the community.
   }
 
 
-  // SCROLL REVEAL
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        entry.target.querySelectorAll('.reveal-item').forEach((el, i) => {
-          setTimeout(() => el.classList.add('revealed'), i * 150);
-        });
-      }
-    });
-  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  // SCROLL REVEAL - fixed for Jekyll
+  function initReveal() {
+    const els = document.querySelectorAll('.reveal');
+    if (!els.length) return;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          entry.target.querySelectorAll('.reveal-item').forEach((el, i) => {
+            setTimeout(() => el.classList.add('revealed'), i * 180);
+          });
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+    els.forEach(el => obs.observe(el));
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
 
   async function main(){
     bindUI();
