@@ -451,3 +451,98 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; }
     padding-left: 12px;
   }
 }
+
+/* ── FULLPAGE SCROLL ── */
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.fp-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+
+.fp-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* First section always visible */
+.fp-section:first-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Remove old container padding constraints for fp sections */
+.fp-section .section {
+  margin-top: 0;
+  height: 100%;
+}
+
+/* Hero header section */
+.fp-hero {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Nav dots */
+.fp-nav {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+.fp-nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line-bright);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  padding: 0;
+}
+
+.fp-nav-dot.active {
+  background: var(--accent);
+  transform: scale(1.4);
+}
+
+@media (max-width: 760px) {
+  .fp-nav { display: none; }
+  html { scroll-snap-type: none; }
+  .fp-section, .fp-hero { min-height: auto; padding: 32px 0; }
+}
+
+/* ── EDU + WORK GRID ── */
+.edu-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .edu-work-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,148 +1,223 @@
 ---
 layout: default
-title: "Jorge Mesa Marrero — CV & Repos"
+title: "Jorge Mesa Marrero --- CV & Repos"
 ---
 
-<div class="container">
-  <header class="topbar reveal">
-    <div>
-      <h1 class="title">Jorge Mesa Marrero</h1>
-      <div class="subtitle">Student of Multiplatform Application Development (1º DAM)</div>
+<!-- NAV DOTS -->
+<nav class="fp-nav" id="fpNav">
+  <button class="fp-nav-dot active" data-section="0" title="Header"></button>
+  <button class="fp-nav-dot" data-section="1" title="About me"></button>
+  <button class="fp-nav-dot" data-section="2" title="Education"></button>
+  <button class="fp-nav-dot" data-section="3" title="Projects"></button>
+  <button class="fp-nav-dot" data-section="4" title="Repositories"></button>
+</nav>
+
+<div class="fp-wrapper">
+
+  <!-- SECTION 0: HEADER HERO -->
+  <div class="fp-hero" id="fp0">
+    <div class="container">
+      <header class="topbar">
+        <div>
+          <h1 class="title">Jorge Mesa Marrero</h1>
+          <div class="subtitle">Student of Multiplatform Application Development (1º DAM)</div>
+        </div>
+        <nav style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="https://www.linkedin.com/in/jmesmarrero" target="_blank">LinkedIn</a>
+          <a class="btn" href="https://github.com/jmesmarrero" target="_blank">GitHub</a>
+          <a class="btn" href="mailto:jorgemesamarrero@gmail.com">Email</a>
+        </nav>
+      </header>
     </div>
-    <nav style="display:flex;gap:10px">
-      <a class="btn" href="https://www.linkedin.com/in/jmesmarrero" target="_blank">LinkedIn</a>
-      <a class="btn" href="https://github.com/jmesmarrero" target="_blank">GitHub</a>
-      <a class="btn" href="mailto:jorgemesamarrero@gmail.com">Email</a>
-    </nav>
-  </header>
+  </div>
 
-  <section class="section section-about hero-section reveal">
-    <h2>About me</h2>
-    <div class="about-layout">
+  <!-- SECTION 1: ABOUT ME -->
+  <div class="fp-section" id="fp1">
+    <div class="container">
+      <section class="section section-about">
+        <h2>About me</h2>
+        <div class="about-layout">
+          <div class="about-photo-col">
+            <img src="assets/img/perfil.png" alt="Foto de perfil" class="about-photo">
+          </div>
+          <div class="about-content">
+            <p class="muted" style="margin:0 0 14px">
+              I am a DAM student, passionate about programming, system administration, and technical documentation.
+              Currently, I am focusing on key areas of software development.
+            </p>
+            <div class="pillrow" style="margin-bottom:20px">
+              <span class="pill">Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">HTML/CSS</span>
+              <span class="pill">Git</span>
+            </div>
+            <h3 style="margin:0 0 8px">Experience / Class projects</h3>
+            <ul class="muted" style="margin:0 0 16px;padding-left:18px">
+              <li>In progress</li>
+              <li>Proyecto Java: “Gestión de Personas de un Centro Educativo” (OOP + Polymorphism + ArrayList + RegEx)</li>
+            </ul>
+            <h3 style="margin:0 0 8px">Goal</h3>
+            <p class="muted" style="margin:0">
+              To keep growing as a developer, consolidating my knowledge in programming, databases, and application design.
+              I enjoy documenting my learning process and sharing it with the community.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
-      <div class="about-photo-col">
-        <img src="assets/img/perfil.png" alt="Foto de perfil" class="about-photo">
+  <!-- SECTION 2: EDUCATION + WORK EXPERIENCE -->
+  <div class="fp-section" id="fp2">
+    <div class="container">
+      <div class="edu-work-grid">
+
+        <!-- LEFT: EDUCATION -->
+        <section class="section">
+          <h2>Education &amp; Training</h2>
+          <div class="timeline">
+
+            <div class="timeline-group">
+              <div class="timeline-label">Academic</div>
+              <div class="timeline-items">
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">2006 – 2008</span>
+                    <h3 class="timeline-title">High School (Bachillerato)</h3>
+                    <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
+                  </div>
+                </div>
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">2002 – 2006</span>
+                    <h3 class="timeline-title">Secondary Education (E.S.O.)</h3>
+                    <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-group">
+              <div class="timeline-label">Professional Training</div>
+              <div class="timeline-items">
+                <div class="timeline-entry">
+                  <div class="timeline-dot accent"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">2025 – Present</span>
+                    <h3 class="timeline-title">Multiplatform Application Development (DAM)</h3>
+                    <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
+                    <span class="timeline-badge">In progress</span>
+                  </div>
+                </div>
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">2013 – 2016</span>
+                    <h3 class="timeline-title">Tourism &amp; Hospitality — Practical</h3>
+                    <p class="timeline-place">Hotel Upstalsboom Parkhotel ★★★★ · Emden, Germany</p>
+                    <p class="timeline-desc">Dual training — hands-on in a 4-star hotel environment.</p>
+                  </div>
+                </div>
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">2013 – 2016</span>
+                    <h3 class="timeline-title">Tourism &amp; Hospitality — Theoretical</h3>
+                    <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
+                    <p class="timeline-desc">Dual training system — theoretical component.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- RIGHT: WORK EXPERIENCE -->
+        <section class="section">
+          <h2>Work Experience</h2>
+          <div class="timeline">
+
+            <div class="timeline-group">
+              <div class="timeline-label">Jobs</div>
+              <div class="timeline-items">
+
+                <div class="timeline-entry">
+                  <div class="timeline-dot accent"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">Mar 2024 – Sep 2025</span>
+                    <h3 class="timeline-title">Front Office Agent</h3>
+                    <p class="timeline-place">Motel One Dublin · Motel One Germany Betriebs GmbH · Ireland</p>
+                  </div>
+                </div>
+
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">Jul 2021 – Feb 2024</span>
+                    <h3 class="timeline-title">Booking / Commercial Agent</h3>
+                    <p class="timeline-place">Viajes Canarias Europa for Schauinsland · Tenerife</p>
+                  </div>
+                </div>
+
+                <div class="timeline-entry">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-body">
+                    <span class="timeline-period">Jul 2016 – Sep 2021</span>
+                    <h3 class="timeline-title">Front Office Agent</h3>
+                    <p class="timeline-place">ACCOR Hotels ★★★★ · Hamburg, Germany</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
       </div>
+    </div>
+  </div>
 
-      <div class="about-content">
-        <p class="muted" style="margin:0 0 14px">
-            I am a DAM student, passionate about programming, system administration, and technical documentation.
-Currently, I am focusing on key areas of software development.
+  <!-- SECTION 3: PROJECTS -->
+  <div class="fp-section" id="fp3">
+    <div class="container">
+      <section class="section">
+        <h2>Featured projects (topic: <code>showcase</code>)</h2>
+        <div id="featured" class="cards"></div>
+        <p class="muted" style="margin:10px 0 0">
+          Add the topic <b>showcase</b> on GitHub to show a repo here.
         </p>
-        <div class="pillrow" style="margin-bottom:20px">
-          <span class="pill">Java</span>
-          <span class="pill">SQL</span>
-          <span class="pill">HTML/CSS</span>
-          <span class="pill">Git</span>
-        </div>
-
-        <h3 style="margin:0 0 8px">Experience/Class projects</h3>
-        <ul class="muted" style="margin:0 0 16px;padding-left:18px">
-          <li>In progress</li>
-          <li>Proyecto Java: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
-        </ul>
-
-        <h3 style="margin:0 0 8px">Objetivo</h3>
-        <p class="muted" style="margin:0">
-          To keep growing as a developer, consolidating my knowledge in programming, databases, and application design.
-I enjoy documenting my learning process and sharing it with the community.
-        </p>
-      </div>
-
+      </section>
     </div>
-  </section>
+  </div>
 
-
-  <section class="section reveal">
-    <h2>Education &amp; Training</h2>
-    <div class="timeline">
-
-      <div class="timeline-group reveal-item">
-        <div class="timeline-label">Academic</div>
-        <div class="timeline-items">
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-period">2006 – 2008</span>
-              <h3 class="timeline-title">High School (Bachillerato)</h3>
-              <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-period">2002 – 2006</span>
-              <h3 class="timeline-title">Secondary Education (E.S.O.)</h3>
-              <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
-            </div>
-          </div>
+  <!-- SECTION 4: REPOSITORIES -->
+  <div class="fp-section" id="fp4">
+    <div class="container">
+      <section class="section">
+        <h2>My repositories</h2>
+        <div class="toolbar">
+          <input id="q" class="input" placeholder="Search repositories..." />
+          <select id="sort" class="select">
+            <option value="updated">Sort: recent activity</option>
+            <option value="stars">Sort: stars</option>
+            <option value="name">Sort: name</option>
+          </select>
+          <button class="btn active" data-topic="all">All</button>
+          <button class="btn" data-topic="showcase">showcase</button>
+          <button class="btn" data-topic="web">web</button>
+          <button class="btn" data-topic="backend">backend</button>
         </div>
-      </div>
-
-      <div class="timeline-group reveal-item">
-        <div class="timeline-label">Professional Training</div>
-        <div class="timeline-items">
-          <div class="timeline-entry">
-            <div class="timeline-dot accent"></div>
-            <div class="timeline-body">
-              <span class="timeline-period">2025 – Present</span>
-              <h3 class="timeline-title">Multiplatform Application Development (DAM)</h3>
-              <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
-              <span class="timeline-badge">In progress</span>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-period">2013 – 2016</span>
-              <h3 class="timeline-title">Tourism &amp; Hospitality — Practical</h3>
-              <p class="timeline-place">Hotel Upstalsboom Parkhotel ★★★★ · Emden, Germany</p>
-              <p class="timeline-desc">Dual training — hands-on in a 4-star hotel environment.</p>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-body">
-              <span class="timeline-period">2013 – 2016</span>
-              <h3 class="timeline-title">Tourism &amp; Hospitality — Theoretical</h3>
-              <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
-              <p class="timeline-desc">Dual training system — theoretical component.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+        <div style="height:12px"></div>
+        <div id="repos" class="cards"></div>
+      </section>
     </div>
-  </section>
+  </div>
 
-  <section class="section reveal">
-    <h2>Proyectos destacados (topic: <code>showcase</code>)</h2>
-    <div id="featured" class="cards"></div>
-    <p class="muted" style="margin:10px 0 0">
-      Para que un repo salga aquí, añade el topic <b>showcase</b> en GitHub.
-    </p>
-  </section>
-
-  <section class="section reveal">
-    <h2>My repositories</h2>
-    <div class="toolbar">
-      <input id="q" class="input" placeholder="Buscar repositorios..." />
-      <select id="sort" class="select">
-        <option value="updated">Ordenar: actividad reciente</option>
-        <option value="stars">Ordenar: estrellas</option>
-        <option value="name">Ordenar: nombre</option>
-      </select>
-      <button class="btn active" data-topic="all">Todos</button>
-      <button class="btn" data-topic="showcase">showcase</button>
-      <button class="btn" data-topic="web">web</button>
-      <button class="btn" data-topic="backend">backend</button>
-    </div>
-
-    <div style="height:12px"></div>
-    <div id="repos" class="cards"></div>
-  </section>
 </div>
-
 <script>
   const GITHUB_USERNAME = "jmesmarrero"; // <- CAMBIA ESTO
   const FEATURED_TOPIC = "showcase";
@@ -254,29 +329,43 @@ I enjoy documenting my learning process and sharing it with the community.
     });
   }
 
+  // FULLPAGE SCROLL REVEAL
+  const fpSections = document.querySelectorAll('.fp-section');
+  const fpDots = document.querySelectorAll('.fp-nav-dot');
 
-  // SCROLL REVEAL - fixed for Jekyll
-  function initReveal() {
-    const els = document.querySelectorAll('.reveal');
-    if (!els.length) return;
-    const obs = new IntersectionObserver((entries) => {
+  const fpObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        const idx = entry.target.id.replace('fp','');
+        fpDots.forEach(d => d.classList.remove('active'));
+        const dot = document.querySelector('[data-section="' + idx + '"]');
+        if (dot) dot.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+
+  fpSections.forEach(s => fpObserver.observe(s));
+
+  // Also observe hero
+  const hero = document.getElementById('fp0');
+  if (hero) {
+    const heroObs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          entry.target.querySelectorAll('.reveal-item').forEach((el, i) => {
-            setTimeout(() => el.classList.add('revealed'), i * 180);
-          });
-          obs.unobserve(entry.target);
-        }
+        const dot = document.querySelector('[data-section="0"]');
+        if (dot) dot.classList.toggle('active', entry.isIntersecting);
       });
-    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-    els.forEach(el => obs.observe(el));
+    }, { threshold: 0.4 });
+    heroObs.observe(hero);
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initReveal);
-  } else {
-    initReveal();
-  }
+
+  fpDots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = dot.dataset.section;
+      const target = document.getElementById('fp' + idx);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
 
   async function main(){
     bindUI();
