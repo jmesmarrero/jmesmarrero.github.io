@@ -486,3 +486,147 @@ body {
   }
   .two-col-divider { display: none; }
 }
+
+/* ── TOPNAV LOGO actualizado ── */
+.topnav-logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.topnav-logo span { color: var(--accent); }
+
+/* ── HERO LEFT: foto centrada + botones debajo ── */
+.hero-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 240px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.65));
+}
+
+.hero-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.hero-social .btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* ── HERO RIGHT: más espacio entre título y bio ── */
+.hero-right {}
+
+.hero-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  margin: 0 0 6px;
+}
+.hero-name span { color: var(--accent); }
+
+.hero-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.hero-line {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+
+.hero-bio {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.75;
+  margin: 0 0 20px;
+  max-width: 540px;
+}
+
+/* ── INFO BOXES: cajas con borde accent ── */
+.info-box {
+  border: 1px solid var(--accent-dim);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  background: var(--accent-glow);
+}
+
+.info-box-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.info-box-text {
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hero-list li {
+  font-size: 13px;
+  color: var(--text-2);
+  padding: 3px 0 3px 16px;
+  position: relative;
+  line-height: 1.5;
+}
+.hero-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: var(--accent);
+  font-size: 10px;
+}
+
+/* ── RESPONSIVE hero ── */
+@media (max-width: 860px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+  .hero-photo { max-width: 160px; margin: 0 auto; }
+  .hero-social { flex-direction: row; justify-content: center; }
+  .hero-social .btn { width: auto; }
+  .hero-line { margin: 0 auto 28px; }
+  .hero-bio { margin: 0 auto 20px; }
+  .pillrow { justify-content: center; }
+}

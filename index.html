@@ -3,32 +3,33 @@ layout: default
 title: "Jorge Mesa Marrero — CV & Repos"
 ---
 
-<!-- ═══ TOPNAV ═══ -->
 <nav class="topnav">
-  <a class="topnav-logo" href="#hero">JORGE.<span>DEV</span></a>
+  <a class="topnav-logo" href="#hero">JORGE MESA <span>MARRERO</span></a>
   <div class="topnav-links">
     <a href="#hero">About</a>
     <a href="#background">Background</a>
-    <a href="#projects">Projects</a>
-    <a href="#repos">Repos</a>
+    <a href="#repos">Projects &amp; Repos</a>
     <a href="mailto:jorgemesamarrero@gmail.com">Contact</a>
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════
-     SECTION 1 — HERO / ABOUT ME
-═══════════════════════════════════════════════ -->
+<!-- SECTION 1: HERO -->
 <section class="fp-section" id="hero">
   <div class="fp-inner">
     <div class="hero-layout">
 
-      <!-- FOTO -->
-      <div class="hero-photo-wrap reveal">
+      <!-- IZQUIERDA: foto + botones -->
+      <div class="hero-left reveal">
         <img src="assets/img/perfil.png" alt="Jorge Mesa Marrero" class="hero-photo">
+        <div class="hero-social">
+          <a class="btn" href="https://www.linkedin.com/in/jmesmarrero" target="_blank">LinkedIn</a>
+          <a class="btn" href="https://github.com/jmesmarrero" target="_blank">GitHub</a>
+          <a class="btn" href="mailto:jorgemesamarrero@gmail.com">Email</a>
+        </div>
       </div>
 
-      <!-- CONTENIDO -->
-      <div>
+      <!-- DERECHA: contenido -->
+      <div class="hero-right">
         <h1 class="hero-name reveal">Jorge Mesa <span>Marrero</span></h1>
         <p class="hero-sub reveal reveal-d1">Student of Multiplatform Application Development · 1º DAM</p>
         <div class="hero-line reveal reveal-d1"></div>
@@ -45,23 +46,20 @@ title: "Jorge Mesa Marrero — CV & Repos"
           <span class="pill">Git</span>
         </div>
 
-        <p class="hero-block-title reveal reveal-d3">Experience / Class projects</p>
-        <ul class="hero-list reveal reveal-d3">
-          <li>In progress</li>
-          <li>Proyecto Java: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
-        </ul>
+        <div class="info-box reveal reveal-d3">
+          <p class="info-box-title">Class Projects</p>
+          <ul class="hero-list">
+            <li>Proyecto Java: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
+          </ul>
+        </div>
 
-        <p class="hero-block-title reveal reveal-d4">Goal</p>
-        <p class="hero-bio reveal reveal-d4" style="margin-bottom:22px">
-          To keep growing as a developer, consolidating my knowledge in programming,
-          databases, and application design. I enjoy documenting my learning process
-          and sharing it with the community.
-        </p>
-
-        <div class="btn-row reveal reveal-d4">
-          <a class="btn" href="https://www.linkedin.com/in/jmesmarrero" target="_blank">LinkedIn</a>
-          <a class="btn" href="https://github.com/jmesmarrero" target="_blank">GitHub</a>
-          <a class="btn" href="mailto:jorgemesamarrero@gmail.com">Email</a>
+        <div class="info-box reveal reveal-d4">
+          <p class="info-box-title">Goal</p>
+          <p class="info-box-text">
+            To keep growing as a developer, consolidating my knowledge in programming,
+            databases, and application design. I enjoy documenting my learning process
+            and sharing it with the community.
+          </p>
         </div>
       </div>
 
@@ -69,16 +67,13 @@ title: "Jorge Mesa Marrero — CV & Repos"
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     SECTION 2 — EDUCATION + WORK EXPERIENCE
-═══════════════════════════════════════════════ -->
+<!-- SECTION 2: BACKGROUND -->
 <section class="fp-section" id="background">
   <div class="fp-inner">
     <div class="sec-label reveal">Background</div>
-
     <div class="two-col">
 
-      <!-- LEFT: EDUCATION -->
+      <!-- Education -->
       <div class="reveal">
         <h2 class="two-col-title">Education &amp; Training</h2>
         <div class="tl">
@@ -127,14 +122,12 @@ title: "Jorge Mesa Marrero — CV & Repos"
         </div>
       </div>
 
-      <!-- DIVIDER -->
       <div class="two-col-divider reveal reveal-d1"></div>
 
-      <!-- RIGHT: WORK EXPERIENCE -->
+      <!-- Work -->
       <div class="reveal reveal-d2">
         <h2 class="two-col-title">Work Experience</h2>
         <div class="tl">
-
           <div class="tl-group">
             <div class="tl-group-lbl">Jobs</div>
             <div class="tl-entry">
@@ -156,7 +149,6 @@ title: "Jorge Mesa Marrero — CV & Repos"
               <p class="tl-place">ACCOR Hotels ★★★★ · Hamburg, Germany</p>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -164,28 +156,17 @@ title: "Jorge Mesa Marrero — CV & Repos"
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     SECTION 3 — FEATURED PROJECTS
-═══════════════════════════════════════════════ -->
-<section class="fp-section" id="projects">
-  <div class="fp-inner">
-    <div class="sec-label reveal">
-      Featured projects
-      <span style="font-weight:400;color:var(--muted);text-transform:none;letter-spacing:0;font-size:12px">(topic: showcase)</span>
-    </div>
-    <div id="featured" class="cards reveal reveal-d1"></div>
-    <p class="muted reveal reveal-d2" style="margin-top:14px">
-      Add the topic <b style="color:var(--accent)">showcase</b> on GitHub to show a repo here.
-    </p>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════
-     SECTION 4 — REPOSITORIES
-═══════════════════════════════════════════════ -->
+<!-- SECTION 3: PROJECTS + REPOS juntos -->
 <section class="fp-section" id="repos">
   <div class="fp-inner">
-    <div class="sec-label reveal">My repositories</div>
+
+    <div class="sec-label reveal">Featured projects <span style="font-weight:400;color:var(--muted);text-transform:none;letter-spacing:0;font-size:12px">(topic: showcase)</span></div>
+    <div id="featured" class="cards reveal reveal-d1"></div>
+    <p class="muted reveal" style="margin-top:10px;margin-bottom:44px">
+      Add the topic <b style="color:var(--accent)">showcase</b> on GitHub to show a repo here.
+    </p>
+
+    <div class="sec-label reveal">All repositories</div>
     <div class="toolbar reveal reveal-d1">
       <input id="q" class="input" placeholder="Search repositories..." />
       <select id="sort" class="select">
@@ -199,31 +180,21 @@ title: "Jorge Mesa Marrero — CV & Repos"
       <button class="btn" data-topic="backend">backend</button>
     </div>
     <div id="repos-list" class="cards reveal reveal-d2"></div>
+
   </div>
 </section>
 
 <script>
 const GITHUB_USERNAME = "jmesmarrero";
 const FEATURED_TOPIC  = "showcase";
-let allRepos   = [];
-let activeTopic = "all";
+let allRepos = [], activeTopic = "all";
 
-/* ── SCROLL REVEAL ── */
 const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
-
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-/* ── ACTIVE NAV ── */
 const navLinks = document.querySelectorAll('.topnav-links a[href^="#"]');
-const sections = document.querySelectorAll('.fp-section');
-
 const navObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -233,40 +204,31 @@ const navObs = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.4 });
+document.querySelectorAll('.fp-section').forEach(s => navObs.observe(s));
 
-sections.forEach(s => navObs.observe(s));
-
-/* ── GITHUB ── */
-function fmtDate(iso) {
-  return new Date(iso).toLocaleDateString('es-ES', { year:'numeric', month:'short', day:'2-digit' });
-}
-function bClass(i) { return ['border-blue','border-violet','border-emerald'][i % 3]; }
+function fmtDate(iso) { return new Date(iso).toLocaleDateString('es-ES',{year:'numeric',month:'short',day:'2-digit'}); }
+function bClass(i) { return ['border-blue','border-violet','border-emerald'][i%3]; }
 
 async function fetchRepos() {
-  const r = await fetch(
-    `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`,
-    { headers: { 'Accept': 'application/vnd.github+json' } }
-  );
+  const r = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`,
+    {headers:{'Accept':'application/vnd.github+json'}});
   if (!r.ok) throw new Error('Could not fetch GitHub API.');
   return (await r.json()).map(r => ({
-    name: r.name, html_url: r.html_url,
-    description: r.description || '',
-    language: r.language || '—',
-    stargazers_count: r.stargazers_count || 0,
-    updated_at: r.updated_at, topics: r.topics || []
+    name:r.name, html_url:r.html_url, description:r.description||'',
+    language:r.language||'—', stargazers_count:r.stargazers_count||0,
+    updated_at:r.updated_at, topics:r.topics||[]
   }));
 }
 
 function renderFeatured(repos) {
-  const list = repos.filter(r => r.topics.includes(FEATURED_TOPIC)).slice(0, 6);
+  const list = repos.filter(r=>r.topics.includes(FEATURED_TOPIC)).slice(0,6);
   const el = document.getElementById('featured');
   el.innerHTML = list.length ? '' : `<p class="muted">No repos with topic <b>${FEATURED_TOPIC}</b> yet.</p>`;
-  list.forEach((r, i) => {
-    const pills = r.topics.slice(0, 4).map(t => `<span class="pill">${t}</span>`).join('');
-    el.insertAdjacentHTML('beforeend', `
+  list.forEach((r,i) => {
+    const pills = r.topics.slice(0,4).map(t=>`<span class="pill">${t}</span>`).join('');
+    el.insertAdjacentHTML('beforeend',`
       <article class="card ${bClass(i)}">
-        <h3>${r.name}</h3>
-        <p class="muted">${r.description || 'No description yet'}</p>
+        <h3>${r.name}</h3><p class="muted">${r.description||'No description yet'}</p>
         <div class="pillrow"><span class="pill featured">★ Featured</span>${pills}</div>
         <div class="repo-meta"><span>⭐ ${r.stargazers_count}</span><span>🧩 ${r.language}</span><span>🕒 ${fmtDate(r.updated_at)}</span></div>
         <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">View repo →</a>
@@ -275,31 +237,28 @@ function renderFeatured(repos) {
 }
 
 function applyFilters(repos) {
-  const q    = (document.getElementById('q').value || '').toLowerCase();
+  const q = (document.getElementById('q').value||'').toLowerCase();
   const sort = document.getElementById('sort').value;
   let out = repos.filter(r => {
-    const txt   = r.name.toLowerCase().includes(q) || r.description.toLowerCase().includes(q);
-    const topic = activeTopic === 'all' ? true : r.topics.includes(activeTopic);
+    const txt = r.name.toLowerCase().includes(q)||r.description.toLowerCase().includes(q);
+    const topic = activeTopic==='all' ? true : r.topics.includes(activeTopic);
     return txt && topic;
   });
-  if (sort === 'updated') out.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at));
-  if (sort === 'stars')   out.sort((a,b) => b.stargazers_count - a.stargazers_count);
-  if (sort === 'name')    out.sort((a,b) => a.name.localeCompare(b.name));
+  if(sort==='updated') out.sort((a,b)=>new Date(b.updated_at)-new Date(a.updated_at));
+  if(sort==='stars')   out.sort((a,b)=>b.stargazers_count-a.stargazers_count);
+  if(sort==='name')    out.sort((a,b)=>a.name.localeCompare(b.name));
   return out;
 }
 
 function renderRepos(repos) {
-  const el   = document.getElementById('repos-list');
+  const el = document.getElementById('repos-list');
   const list = applyFilters(repos);
   el.innerHTML = list.length ? '' : `<p class="muted">No results.</p>`;
-  list.forEach((r, i) => {
-    const pills = r.topics.length
-      ? r.topics.slice(0, 5).map(t => `<span class="pill">${t}</span>`).join('')
-      : `<span class="pill">no topics</span>`;
-    el.insertAdjacentHTML('beforeend', `
+  list.forEach((r,i) => {
+    const pills = r.topics.length ? r.topics.slice(0,5).map(t=>`<span class="pill">${t}</span>`).join('') : `<span class="pill">no topics</span>`;
+    el.insertAdjacentHTML('beforeend',`
       <article class="card ${bClass(i)}">
-        <h3>${r.name}</h3>
-        <p class="muted">${r.description || 'No description'}</p>
+        <h3>${r.name}</h3><p class="muted">${r.description||'No description'}</p>
         <div class="pillrow">${pills}</div>
         <div class="repo-meta"><span>⭐ ${r.stargazers_count}</span><span>🧩 ${r.language}</span><span>🕒 ${fmtDate(r.updated_at)}</span></div>
         <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">Open →</a>
@@ -308,14 +267,12 @@ function renderRepos(repos) {
 }
 
 function bindUI() {
-  document.getElementById('q').addEventListener('input', () => renderRepos(allRepos));
-  document.getElementById('sort').addEventListener('change', () => renderRepos(allRepos));
+  document.getElementById('q').addEventListener('input',()=>renderRepos(allRepos));
+  document.getElementById('sort').addEventListener('change',()=>renderRepos(allRepos));
   document.querySelectorAll('.btn[data-topic]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.btn[data-topic]').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeTopic = btn.dataset.topic;
-      renderRepos(allRepos);
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.btn[data-topic]').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active'); activeTopic=btn.dataset.topic; renderRepos(allRepos);
     });
   });
 }
@@ -326,9 +283,8 @@ async function main() {
   renderFeatured(allRepos);
   renderRepos(allRepos);
 }
-
 main().catch(err => {
-  document.getElementById('featured').innerHTML   = `<p class="muted">${err.message}</p>`;
+  document.getElementById('featured').innerHTML = `<p class="muted">${err.message}</p>`;
   document.getElementById('repos-list').innerHTML = `<p class="muted">${err.message}</p>`;
 });
 </script>
