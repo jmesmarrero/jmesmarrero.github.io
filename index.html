@@ -1,371 +1,324 @@
 ---
 layout: default
-title: "Jorge Mesa Marrero --- CV & Repos"
+title: "Jorge Mesa Marrero — CV & Repos"
 ---
 
-<!-- NAV DOTS -->
-<nav class="fp-nav" id="fpNav">
-  <button class="fp-nav-dot active" data-section="0" title="Header"></button>
-  <button class="fp-nav-dot" data-section="1" title="About me"></button>
-  <button class="fp-nav-dot" data-section="2" title="Education"></button>
-  <button class="fp-nav-dot" data-section="3" title="Projects"></button>
-  <button class="fp-nav-dot" data-section="4" title="Repositories"></button>
+<!-- ── TOPNAV ── -->
+<nav class="topnav">
+  <a class="topnav-logo" href="#hero">JORGE.<span>DEV</span></a>
+  <div class="topnav-links">
+    <a href="#hero">About</a>
+    <a href="#background">Background</a>
+    <a href="#projects">Projects</a>
+    <a href="#repos">Repos</a>
+    <a href="mailto:jorgemesamarrero@gmail.com">Contact</a>
+  </div>
 </nav>
 
-<div class="fp-wrapper">
+<!-- ══════════════════════════════════════
+     SECTION 1 — HERO / ABOUT ME
+══════════════════════════════════════ -->
+<section class="fp-section" id="hero">
+  <div class="fp-inner">
+    <div class="hero-layout">
 
-  <!-- SECTION 0: HEADER HERO -->
-  <div class="fp-hero" id="fp0">
-    <div class="container">
-      <header class="topbar">
-        <div>
-          <h1 class="title">Jorge Mesa Marrero</h1>
-          <div class="subtitle">Student of Multiplatform Application Development (1º DAM)</div>
+      <div class="reveal">
+        <img src="assets/img/perfil.png" alt="Jorge Mesa Marrero" class="hero-photo">
+      </div>
+
+      <div>
+        <h1 class="hero-name reveal">Jorge Mesa<br><span>Marrero</span></h1>
+        <p class="hero-subtitle reveal reveal-delay-1">Student of Multiplatform Application Development · 1º DAM</p>
+        <div class="hero-divider reveal reveal-delay-1"></div>
+
+        <p class="hero-bio reveal reveal-delay-2">
+          I am a DAM student, passionate about programming, system administration, and technical documentation.
+          Currently focusing on key areas of software development.
+        </p>
+
+        <div class="pillrow reveal reveal-delay-2">
+          <span class="pill">Java</span>
+          <span class="pill">SQL</span>
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">Git</span>
         </div>
-        <nav style="display:flex;gap:10px;flex-wrap:wrap">
+
+        <p class="hero-projects-title reveal reveal-delay-3">Experience / Class projects</p>
+        <ul class="hero-projects-list reveal reveal-delay-3">
+          <li>In progress</li>
+          <li>Proyecto Java: "Gestión de Personas de un Centro Educativo" (OOP + Polymorphism + ArrayList + RegEx)</li>
+        </ul>
+
+        <div class="hero-links reveal reveal-delay-4">
           <a class="btn" href="https://www.linkedin.com/in/jmesmarrero" target="_blank">LinkedIn</a>
           <a class="btn" href="https://github.com/jmesmarrero" target="_blank">GitHub</a>
           <a class="btn" href="mailto:jorgemesamarrero@gmail.com">Email</a>
-        </nav>
-      </header>
-    </div>
-  </div>
-
-  <!-- SECTION 1: ABOUT ME -->
-  <div class="fp-section" id="fp1">
-    <div class="container">
-      <section class="section section-about">
-        <h2>About me</h2>
-        <div class="about-layout">
-          <div class="about-photo-col">
-            <img src="assets/img/perfil.png" alt="Foto de perfil" class="about-photo">
-          </div>
-          <div class="about-content">
-            <p class="muted" style="margin:0 0 14px">
-              I am a DAM student, passionate about programming, system administration, and technical documentation.
-              Currently, I am focusing on key areas of software development.
-            </p>
-            <div class="pillrow" style="margin-bottom:20px">
-              <span class="pill">Java</span>
-              <span class="pill">SQL</span>
-              <span class="pill">HTML/CSS</span>
-              <span class="pill">Git</span>
-            </div>
-            <h3 style="margin:0 0 8px">Experience / Class projects</h3>
-            <ul class="muted" style="margin:0 0 16px;padding-left:18px">
-              <li>In progress</li>
-              <li>Proyecto Java: “Gestión de Personas de un Centro Educativo” (OOP + Polymorphism + ArrayList + RegEx)</li>
-            </ul>
-            <h3 style="margin:0 0 8px">Goal</h3>
-            <p class="muted" style="margin:0">
-              To keep growing as a developer, consolidating my knowledge in programming, databases, and application design.
-              I enjoy documenting my learning process and sharing it with the community.
-            </p>
-          </div>
         </div>
-      </section>
-    </div>
-  </div>
-
-  <!-- SECTION 2: EDUCATION + WORK EXPERIENCE -->
-  <div class="fp-section" id="fp2">
-    <div class="container">
-      <div class="edu-work-grid">
-
-        <!-- LEFT: EDUCATION -->
-        <section class="section">
-          <h2>Education &amp; Training</h2>
-          <div class="timeline">
-
-            <div class="timeline-group">
-              <div class="timeline-label">Academic</div>
-              <div class="timeline-items">
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">2006 – 2008</span>
-                    <h3 class="timeline-title">High School (Bachillerato)</h3>
-                    <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
-                  </div>
-                </div>
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">2002 – 2006</span>
-                    <h3 class="timeline-title">Secondary Education (E.S.O.)</h3>
-                    <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-group">
-              <div class="timeline-label">Professional Training</div>
-              <div class="timeline-items">
-                <div class="timeline-entry">
-                  <div class="timeline-dot accent"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">2025 – Present</span>
-                    <h3 class="timeline-title">Multiplatform Application Development (DAM)</h3>
-                    <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
-                    <span class="timeline-badge">In progress</span>
-                  </div>
-                </div>
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">2013 – 2016</span>
-                    <h3 class="timeline-title">Tourism &amp; Hospitality — Practical</h3>
-                    <p class="timeline-place">Hotel Upstalsboom Parkhotel ★★★★ · Emden, Germany</p>
-                    <p class="timeline-desc">Dual training — hands-on in a 4-star hotel environment.</p>
-                  </div>
-                </div>
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">2013 – 2016</span>
-                    <h3 class="timeline-title">Tourism &amp; Hospitality — Theoretical</h3>
-                    <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
-                    <p class="timeline-desc">Dual training system — theoretical component.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- RIGHT: WORK EXPERIENCE -->
-        <section class="section">
-          <h2>Work Experience</h2>
-          <div class="timeline">
-
-            <div class="timeline-group">
-              <div class="timeline-label">Jobs</div>
-              <div class="timeline-items">
-
-                <div class="timeline-entry">
-                  <div class="timeline-dot accent"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">Mar 2024 – Sep 2025</span>
-                    <h3 class="timeline-title">Front Office Agent</h3>
-                    <p class="timeline-place">Motel One Dublin · Motel One Germany Betriebs GmbH · Ireland</p>
-                  </div>
-                </div>
-
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">Jul 2021 – Feb 2024</span>
-                    <h3 class="timeline-title">Booking / Commercial Agent</h3>
-                    <p class="timeline-place">Viajes Canarias Europa for Schauinsland · Tenerife</p>
-                  </div>
-                </div>
-
-                <div class="timeline-entry">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-body">
-                    <span class="timeline-period">Jul 2016 – Sep 2021</span>
-                    <h3 class="timeline-title">Front Office Agent</h3>
-                    <p class="timeline-place">ACCOR Hotels ★★★★ · Hamburg, Germany</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </section>
-
       </div>
+
     </div>
   </div>
+</section>
 
-  <!-- SECTION 3: PROJECTS -->
-  <div class="fp-section" id="fp3">
-    <div class="container">
-      <section class="section">
-        <h2>Featured projects (topic: <code>showcase</code>)</h2>
-        <div id="featured" class="cards"></div>
-        <p class="muted" style="margin:10px 0 0">
-          Add the topic <b>showcase</b> on GitHub to show a repo here.
-        </p>
-      </section>
-    </div>
-  </div>
+<!-- ══════════════════════════════════════
+     SECTION 2 — EDUCATION + WORK
+══════════════════════════════════════ -->
+<section class="fp-section" id="background">
+  <div class="fp-inner">
+    <div class="section-label reveal">Background</div>
+    <div class="edu-work-layout">
 
-  <!-- SECTION 4: REPOSITORIES -->
-  <div class="fp-section" id="fp4">
-    <div class="container">
-      <section class="section">
-        <h2>My repositories</h2>
-        <div class="toolbar">
-          <input id="q" class="input" placeholder="Search repositories..." />
-          <select id="sort" class="select">
-            <option value="updated">Sort: recent activity</option>
-            <option value="stars">Sort: stars</option>
-            <option value="name">Sort: name</option>
-          </select>
-          <button class="btn active" data-topic="all">All</button>
-          <button class="btn" data-topic="showcase">showcase</button>
-          <button class="btn" data-topic="web">web</button>
-          <button class="btn" data-topic="backend">backend</button>
+      <!-- LEFT: EDUCATION -->
+      <div class="edu-work-col reveal">
+        <h3>Education &amp; Training</h3>
+        <div class="timeline">
+
+          <div>
+            <div class="timeline-group-label">Academic</div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">2006 – 2008</span>
+                <p class="timeline-title">High School (Bachillerato)</p>
+                <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">2002 – 2006</span>
+                <p class="timeline-title">Secondary Education (E.S.O.)</p>
+                <p class="timeline-place">I.E.S. Mencey Bencomo · Los Realejos, Tenerife</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="timeline-group-label">Professional Training</div>
+            <div class="timeline-entry">
+              <div class="timeline-dot accent"></div>
+              <div>
+                <span class="timeline-period">2025 – Present</span>
+                <p class="timeline-title">Multiplatform Application Development (DAM)</p>
+                <p class="timeline-place">IES Puerto de la Cruz · Tenerife</p>
+                <span class="timeline-badge">In progress</span>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">2013 – 2016</span>
+                <p class="timeline-title">Tourism &amp; Hospitality — Practical</p>
+                <p class="timeline-place">Hotel Upstalsboom Parkhotel ★★★★ · Emden, Germany</p>
+                <p class="timeline-desc">Dual training — hands-on in a 4-star hotel environment.</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">2013 – 2016</span>
+                <p class="timeline-title">Tourism &amp; Hospitality — Theoretical</p>
+                <p class="timeline-place">Berufsschule Emden II · Emden, Germany</p>
+                <p class="timeline-desc">Dual training system — theoretical component.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div style="height:12px"></div>
-        <div id="repos" class="cards"></div>
-      </section>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="edu-work-divider reveal"></div>
+
+      <!-- RIGHT: WORK EXPERIENCE -->
+      <div class="edu-work-col reveal reveal-delay-2">
+        <h3>Work Experience</h3>
+        <div class="timeline">
+
+          <div>
+            <div class="timeline-group-label">Jobs</div>
+            <div class="timeline-entry">
+              <div class="timeline-dot accent"></div>
+              <div>
+                <span class="timeline-period">Mar 2024 – Sep 2025</span>
+                <p class="timeline-title">Front Office Agent</p>
+                <p class="timeline-place">Motel One Dublin · Motel One Germany Betriebs GmbH · Ireland</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">Jul 2021 – Feb 2024</span>
+                <p class="timeline-title">Booking / Commercial Agent</p>
+                <p class="timeline-place">Viajes Canarias Europa for Schauinsland · Tenerife</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div>
+                <span class="timeline-period">Jul 2016 – Sep 2021</span>
+                <p class="timeline-title">Front Office Agent</p>
+                <p class="timeline-place">ACCOR Hotels ★★★★ · Hamburg, Germany</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </div>
+</section>
 
-</div>
+<!-- ══════════════════════════════════════
+     SECTION 3 — PROJECTS
+══════════════════════════════════════ -->
+<section class="fp-section" id="projects">
+  <div class="fp-inner">
+    <div class="section-label reveal">Featured projects <span style="font-weight:400;color:var(--muted);text-transform:none;letter-spacing:0">(topic: showcase)</span></div>
+    <div id="featured" class="cards reveal reveal-delay-1"></div>
+    <p class="muted reveal reveal-delay-2" style="margin-top:14px">Add the topic <b style="color:var(--accent)">showcase</b> on GitHub to show a repo here.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SECTION 4 — REPOSITORIES
+══════════════════════════════════════ -->
+<section class="fp-section" id="repos">
+  <div class="fp-inner">
+    <div class="section-label reveal">My repositories</div>
+    <div class="toolbar reveal reveal-delay-1">
+      <input id="q" class="input" placeholder="Search repositories..." />
+      <select id="sort" class="select">
+        <option value="updated">Sort: recent activity</option>
+        <option value="stars">Sort: stars</option>
+        <option value="name">Sort: name A–Z</option>
+      </select>
+      <button class="btn active" data-topic="all">All</button>
+      <button class="btn" data-topic="showcase">showcase</button>
+      <button class="btn" data-topic="web">web</button>
+      <button class="btn" data-topic="backend">backend</button>
+    </div>
+    <div id="repos-list" class="cards reveal reveal-delay-2"></div>
+  </div>
+</section>
+
 <script>
-  const GITHUB_USERNAME = "jmesmarrero"; // <- CAMBIA ESTO
-  const FEATURED_TOPIC = "showcase";
-  let allRepos = [];
+  const GITHUB_USERNAME = "jmesmarrero";
+  const FEATURED_TOPIC  = "showcase";
+  let allRepos  = [];
   let activeTopic = "all";
 
+  // ── SCROLL REVEAL ──
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── ACTIVE NAV ──
+  const sections = document.querySelectorAll('.fp-section');
+  const navLinks = document.querySelectorAll('.topnav-links a');
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const id = entry.target.id;
+        const active = document.querySelector('.topnav-links a[href="#' + id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(s => navObserver.observe(s));
+
+  // ── GITHUB ──
   function formatDate(iso){
-    const d = new Date(iso);
-    return d.toLocaleDateString("es-ES", {year:"numeric", month:"short", day:"2-digit"});
+    return new Date(iso).toLocaleDateString("es-ES",{year:"numeric",month:"short",day:"2-digit"});
   }
-  function cardBorderByIndex(i){
-    return ["border-blue","border-violet","border-emerald"][i % 3];
-  }
+  function borderClass(i){ return ["border-blue","border-violet","border-emerald"][i%3]; }
 
   async function fetchRepos(){
-    const url = `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`;
-    const res = await fetch(url, { headers: { "Accept":"application/vnd.github+json" }});
-    if(!res.ok) throw new Error("No se pudo leer la API de GitHub. Revisa tu usuario.");
-    const repos = await res.json();
-    return repos.map(r => ({
-      name: r.name,
-      html_url: r.html_url,
-      description: r.description || "",
-      language: r.language || "—",
-      stargazers_count: r.stargazers_count || 0,
-      updated_at: r.updated_at,
-      topics: r.topics || []
+    const res = await fetch(
+      `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`,
+      { headers:{"Accept":"application/vnd.github+json"} }
+    );
+    if(!res.ok) throw new Error("Could not fetch GitHub API.");
+    return (await res.json()).map(r=>({
+      name:r.name, html_url:r.html_url, description:r.description||"",
+      language:r.language||"—", stargazers_count:r.stargazers_count||0,
+      updated_at:r.updated_at, topics:r.topics||[]
     }));
   }
 
   function renderFeatured(repos){
-    const featured = repos.filter(r => r.topics.includes(FEATURED_TOPIC)).slice(0, 6);
+    const featured = repos.filter(r=>r.topics.includes(FEATURED_TOPIC)).slice(0,6);
     const el = document.getElementById("featured");
-    el.innerHTML = featured.length ? "" : `<div class="muted">Aún no tienes repos con topic <b>${FEATURED_TOPIC}</b>.</div>`;
-
-    featured.forEach((r, i) => {
-      const topics = r.topics.slice(0, 4).map(t => `<span class="pill">${t}</span>`).join("");
-      el.insertAdjacentHTML("beforeend", `
-        <article class="card ${cardBorderByIndex(i)}">
+    el.innerHTML = featured.length ? "" : `<div class="muted">No repos with topic <b>${FEATURED_TOPIC}</b> yet.</div>`;
+    featured.forEach((r,i)=>{
+      const topics = r.topics.slice(0,4).map(t=>`<span class="pill">${t}</span>`).join("");
+      el.insertAdjacentHTML("beforeend",`
+        <article class="card ${borderClass(i)}">
           <h3>${r.name}</h3>
-          <div class="muted">${r.description || "Sin descripción (añádela en GitHub 😉)"}</div>
-          <div class="pillrow">
-            <span class="pill featured">Featured</span>
-            ${topics}
-          </div>
-          <div class="repoMeta">
-            <span>⭐ ${r.stargazers_count}</span>
-            <span>🧩 ${r.language}</span>
-            <span>🕒 ${formatDate(r.updated_at)}</span>
-          </div>
-          <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">Ver repo</a>
-        </article>
-      `);
+          <div class="muted">${r.description||"No description yet"}</div>
+          <div class="pillrow"><span class="pill featured">★ Featured</span>${topics}</div>
+          <div class="repoMeta"><span>⭐ ${r.stargazers_count}</span><span>🧩 ${r.language}</span><span>🕒 ${formatDate(r.updated_at)}</span></div>
+          <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">View repo →</a>
+        </article>`);
     });
   }
 
   function applyFilters(repos){
-    const q = (document.getElementById("q").value || "").toLowerCase();
+    const q    = (document.getElementById("q").value||"").toLowerCase();
     const sort = document.getElementById("sort").value;
-
-    let out = repos.filter(r => {
-      const matchesText = r.name.toLowerCase().includes(q) || (r.description||"").toLowerCase().includes(q);
-      const matchesTopic = activeTopic === "all" ? true : r.topics.includes(activeTopic);
-      return matchesText && matchesTopic;
+    let out = repos.filter(r=>{
+      const txt   = r.name.toLowerCase().includes(q)||(r.description||"").toLowerCase().includes(q);
+      const topic = activeTopic==="all" ? true : r.topics.includes(activeTopic);
+      return txt && topic;
     });
-
-    if (sort === "updated") out.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at));
-    if (sort === "stars") out.sort((a,b) => (b.stargazers_count||0) - (a.stargazers_count||0));
-    if (sort === "name") out.sort((a,b) => a.name.localeCompare(b.name));
+    if(sort==="updated") out.sort((a,b)=>new Date(b.updated_at)-new Date(a.updated_at));
+    if(sort==="stars")   out.sort((a,b)=>b.stargazers_count-a.stargazers_count);
+    if(sort==="name")    out.sort((a,b)=>a.name.localeCompare(b.name));
     return out;
   }
 
   function renderRepos(repos){
-    const el = document.getElementById("repos");
+    const el   = document.getElementById("repos-list");
     const list = applyFilters(repos);
-    el.innerHTML = list.length ? "" : `<div class="muted">No hay resultados con esos filtros.</div>`;
-
-    list.forEach((r, i) => {
-      const topics = (r.topics && r.topics.length)
-        ? r.topics.slice(0, 6).map(t => `<span class="pill">${t}</span>`).join("")
-        : `<span class="pill">sin topics</span>`;
-
-      el.insertAdjacentHTML("beforeend", `
-        <article class="card ${cardBorderByIndex(i)}">
+    el.innerHTML = list.length ? "" : `<div class="muted">No results.</div>`;
+    list.forEach((r,i)=>{
+      const topics = r.topics.length
+        ? r.topics.slice(0,6).map(t=>`<span class="pill">${t}</span>`).join("")
+        : `<span class="pill">no topics</span>`;
+      el.insertAdjacentHTML("beforeend",`
+        <article class="card ${borderClass(i)}">
           <h3>${r.name}</h3>
-          <div class="muted">${r.description || "Sin descripción"}</div>
+          <div class="muted">${r.description||"No description"}</div>
           <div class="pillrow">${topics}</div>
-          <div class="repoMeta">
-            <span>⭐ ${r.stargazers_count}</span>
-            <span>🧩 ${r.language}</span>
-            <span>🕒 ${formatDate(r.updated_at)}</span>
-          </div>
-          <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">Abrir</a>
-        </article>
-      `);
+          <div class="repoMeta"><span>⭐ ${r.stargazers_count}</span><span>🧩 ${r.language}</span><span>🕒 ${formatDate(r.updated_at)}</span></div>
+          <a class="btn" href="${r.html_url}" target="_blank" rel="noreferrer">Open →</a>
+        </article>`);
     });
   }
 
   function bindUI(){
-    document.getElementById("q").addEventListener("input", () => renderRepos(allRepos));
-    document.getElementById("sort").addEventListener("change", () => renderRepos(allRepos));
-    document.querySelectorAll(".btn[data-topic]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".btn[data-topic]").forEach(b => b.classList.remove("active"));
+    document.getElementById("q").addEventListener("input",()=>renderRepos(allRepos));
+    document.getElementById("sort").addEventListener("change",()=>renderRepos(allRepos));
+    document.querySelectorAll(".btn[data-topic]").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        document.querySelectorAll(".btn[data-topic]").forEach(b=>b.classList.remove("active"));
         btn.classList.add("active");
         activeTopic = btn.dataset.topic;
         renderRepos(allRepos);
       });
     });
   }
-
-  // FULLPAGE SCROLL REVEAL
-  const fpSections = document.querySelectorAll('.fp-section');
-  const fpDots = document.querySelectorAll('.fp-nav-dot');
-
-  const fpObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        const idx = entry.target.id.replace('fp','');
-        fpDots.forEach(d => d.classList.remove('active'));
-        const dot = document.querySelector('[data-section="' + idx + '"]');
-        if (dot) dot.classList.add('active');
-      }
-    });
-  }, { threshold: 0.4 });
-
-  fpSections.forEach(s => fpObserver.observe(s));
-
-  // Also observe hero
-  const hero = document.getElementById('fp0');
-  if (hero) {
-    const heroObs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const dot = document.querySelector('[data-section="0"]');
-        if (dot) dot.classList.toggle('active', entry.isIntersecting);
-      });
-    }, { threshold: 0.4 });
-    heroObs.observe(hero);
-  }
-
-  fpDots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      const idx = dot.dataset.section;
-      const target = document.getElementById('fp' + idx);
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
 
   async function main(){
     bindUI();
@@ -374,9 +327,8 @@ title: "Jorge Mesa Marrero --- CV & Repos"
     renderRepos(allRepos);
   }
 
-  main().catch(err => {
-    document.getElementById("featured").innerHTML = `<div class="muted">${err.message}</div>`;
-    document.getElementById("repos").innerHTML = `<div class="muted">${err.message}</div>`;
-    console.error(err);
+  main().catch(err=>{
+    document.getElementById("featured").innerHTML=`<div class="muted">${err.message}</div>`;
+    document.getElementById("repos-list").innerHTML=`<div class="muted">${err.message}</div>`;
   });
 </script>
