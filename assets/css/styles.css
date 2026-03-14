@@ -711,3 +711,11 @@ body {
   font-size: 15px;
 }
 .contact-icon .fa-github { font-size: 17px; }
+
+/* ── FIX: Background section no fuerza 100vh ── */
+#background {
+  min-height: auto;
+  padding-top: calc(var(--nav-h) + 64px);
+  padding-bottom: 64px;
+  align-items: flex-start;
+}

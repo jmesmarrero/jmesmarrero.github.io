@@ -215,75 +215,6 @@ title: "Jorge Mesa Marrero — CV & Repos"
 <section class="fp-section" id="contact">
   <div class="fp-inner">
     <div class="sec-label reveal">Contact</div>
-
-    <div class="contact-grid reveal reveal-d1">
-
-      <a class="contact-card" href="mailto:jorgemesamarrero@gmail.com">
-        <div class="contact-icon">✉</div>
-        <div>
-          <p class="contact-label">Email</p>
-          <p class="contact-value">jorgemesamarrero@gmail.com</p>
-        </div>
-      </a>
-
-      <a class="contact-card" href="https://www.linkedin.com/in/jmesmarrero" target="_blank" rel="noreferrer">
-        <div class="contact-icon">in</div>
-        <div>
-          <p class="contact-label">LinkedIn</p>
-          <p class="contact-value">linkedin.com/in/jmesmarrero</p>
-        </div>
-      </a>
-
-      <a class="contact-card" href="https://github.com/jmesmarrero" target="_blank" rel="noreferrer">
-        <div class="contact-icon">⌥</div>
-        <div>
-          <p class="contact-label">GitHub</p>
-          <p class="contact-value">github.com/jmesmarrero</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 4: CONTACT -->
-<section class="fp-section" id="contact">
-  <div class="fp-inner">
-    <div class="sec-label reveal">Contact</div>
-    <h2 class="contact-title reveal reveal-d1">Let's work <span>together</span></h2>
-    <div class="contact-grid reveal reveal-d2">
-
-      <a class="contact-card" href="mailto:jorgemesamarrero@gmail.com">
-        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-        <div>
-          <p class="contact-label">Email</p>
-          <p class="contact-value">jorgemesamarrero@gmail.com</p>
-        </div>
-      </a>
-
-      <a class="contact-card" href="https://www.linkedin.com/in/jmesmarrero" target="_blank" rel="noreferrer">
-        <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-        <div>
-          <p class="contact-label">LinkedIn</p>
-          <p class="contact-value">linkedin.com/in/jmesmarrero</p>
-        </div>
-      </a>
-
-      <a class="contact-card" href="https://github.com/jmesmarrero" target="_blank" rel="noreferrer">
-        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
-        <div>
-          <p class="contact-label">GitHub</p>
-          <p class="contact-value">github.com/jmesmarrero</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-<!-- SECTION 4: CONTACT -->
-<section class="fp-section" id="contact">
-  <div class="fp-inner">
-    <div class="sec-label reveal">Contact</div>
     <h2 class="contact-title reveal reveal-d1">Let's work <span>together</span></h2>
     <div class="contact-grid reveal reveal-d2">
 
@@ -412,7 +343,6 @@ function bindUI() {
 async function main() {
   bindUI();
   allRepos = await fetchRepos();
-  renderFeatured(allRepos);
   renderRepos(allRepos);
 }
 main().catch(err => {
