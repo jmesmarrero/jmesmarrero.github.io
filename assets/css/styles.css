@@ -774,3 +774,8 @@ body {
   }
   .contact-divider { display: none; }
 }
+
+/* ── CONTACT TITLE: more space above and below ── */
+.contact-title {
+  margin: 40px 0 40px !important;
+}
