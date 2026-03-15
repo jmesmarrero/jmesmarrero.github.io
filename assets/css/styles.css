@@ -719,3 +719,58 @@ body {
   padding-bottom: 64px;
   align-items: flex-start;
 }
+
+/* ── FIX: reduce gaps between sections ── */
+#repos {
+  min-height: auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  align-items: flex-start;
+}
+
+#contact {
+  min-height: auto;
+  padding-top: 48px;
+  padding-bottom: 80px;
+  align-items: flex-start;
+}
+
+/* ── CONTACT layout: two columns ── */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 52px;
+  align-items: start;
+}
+
+.contact-divider {
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--accent-dim) 20%,
+    var(--accent-dim) 80%,
+    transparent 100%);
+  align-self: stretch;
+  opacity: 0.35;
+  min-height: 200px;
+}
+
+.contact-tagline {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.8;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── CONTACT TITLE: more breathing room ── */
+.contact-title {
+  margin: 28px 0 32px;
+}
+
+@media (max-width: 860px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .contact-divider { display: none; }
+}
