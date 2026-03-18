@@ -790,3 +790,14 @@ body {
   line-height: 1.85;
   margin: 0;
 }
+
+/* ── CONTACT TAGLINE: Playfair like title ── */
+.contact-tagline {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 17px !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: var(--text-2);
+  line-height: 1.85;
+  margin: 0;
+}
