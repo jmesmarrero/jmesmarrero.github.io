@@ -801,3 +801,14 @@ body {
   line-height: 1.85;
   margin: 0;
 }
+
+/* ── CONTACT TAGLINE: updated style ── */
+.contact-tagline {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 19px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: var(--text) !important;
+  line-height: 1.85;
+  margin: 0;
+}
