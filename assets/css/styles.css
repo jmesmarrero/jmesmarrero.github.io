@@ -754,13 +754,7 @@ body {
   min-height: 200px;
 }
 
-.contact-tagline {
-  font-size: 15px;
-  color: var(--text-2);
-  line-height: 1.8;
-  font-style: italic;
-  margin: 0;
-}
+
 
 /* ── CONTACT TITLE: more breathing room ── */
 .contact-title {
@@ -781,34 +775,21 @@ body {
 }
 
 /* ── CONTACT TAGLINE: Rajdhani ── */
-.contact-tagline {
-  font-family: 'Rajdhani', sans-serif !important;
-  font-size: 18px !important;
-  font-style: normal !important;
-  font-weight: 500;
-  color: var(--text-2);
-  line-height: 1.85;
-  margin: 0;
-}
+
 
 /* ── CONTACT TAGLINE: Playfair like title ── */
-.contact-tagline {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: 17px !important;
-  font-style: italic !important;
-  font-weight: 400 !important;
-  color: var(--text-2);
-  line-height: 1.85;
-  margin: 0;
-}
+
 
 /* ── CONTACT TAGLINE: updated style ── */
+
+
+/* ── CONTACT TAGLINE ── */
 .contact-tagline {
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-size: 19px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  color: var(--text) !important;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  color: #f0f4f8;
   line-height: 1.85;
   margin: 0;
 }
