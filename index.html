@@ -358,6 +358,16 @@ async function main() {
   allRepos = await fetchRepos();
   renderRepos(allRepos);
 }
+function revealEmail(el) {
+  const parts = ['jorgemesa', 'marrero', '@', 'gmail', '.com'];
+  const email = parts.join('');
+  document.getElementById('emailValue').textContent = email;
+  document.getElementById('emailValue').style.color = 'var(--text)';
+  document.getElementById('emailEye').className = 'fa-solid fa-eye-slash';
+  el.onclick = null;
+  el.style.cursor = 'default';
+}
+
 main().catch(err => {
   document.getElementById('featured').innerHTML = `<p class="muted">${err.message}</p>`;
   document.getElementById('repos-list').innerHTML = `<p class="muted">${err.message}</p>`;

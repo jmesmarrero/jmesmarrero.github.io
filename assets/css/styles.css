@@ -779,3 +779,14 @@ body {
 .contact-title {
   margin: 40px 0 40px !important;
 }
+
+/* ── CONTACT TAGLINE: Rajdhani ── */
+.contact-tagline {
+  font-family: 'Rajdhani', sans-serif !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500;
+  color: var(--text-2);
+  line-height: 1.85;
+  margin: 0;
+}
