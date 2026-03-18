@@ -221,13 +221,14 @@ title: "Jorge Mesa Marrero — CV & Repos"
       <!-- LEFT: cards -->
       <div class="contact-grid reveal reveal-d2">
 
-        <a class="contact-card" href="mailto:jorgemesamarrero@gmail.com">
+        <div class="contact-card" onclick="revealEmail(this)" style="cursor:pointer;">
           <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-          <div>
+          <div style="flex:1;">
             <p class="contact-label">Email</p>
-            <p class="contact-value">jorgemesamarrero@gmail.com</p>
+            <p class="contact-value" id="emailValue" style="color:var(--muted);">•••••••••••••••@gmail.com</p>
           </div>
-        </a>
+          <i class="fa-solid fa-eye" id="emailEye" style="color:var(--accent);font-size:14px;flex-shrink:0;"></i>
+        </div>
 
         <a class="contact-card" href="https://www.linkedin.com/in/jmesmarrero" target="_blank" rel="noreferrer">
           <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
